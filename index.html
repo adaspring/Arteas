@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARTEA - African Art Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="ARTEA - Showcasing beautiful African art including Nok Terracottas, African Bronzes, and traditional pieces">
+</head>
+<body>
+
+<header>
+    <h1>ARTEA</h1>
+    <div class="hamburger-menu" onclick="toggleMenu()" aria-label="Menu">☰</div>
+</header>
+
+<nav id="flyout-menu" class="hidden">
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#nok-section">Nok Terracottas</a></li>
+        <li><a href="#bronzes-section">African Bronzes</a></li>
+        <li><a href="#fetishes-section">Traditional Artifacts</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<main>
+    <section id="nok-section" class="carousel-container">
+        <h2>Nok Terracottas</h2>
+        <div class="carousel">
+            <button onclick="updateCarousel('nok', 'prev')" aria-label="Previous image">←</button>
+            <div class="carousel-images" id="items-nok" data-index="0">
+                <img src="https://res.cloudinary.com/dc0pgvkii/image/upload/v1743689159/IMG-20241231-WA0117_tozsut.jpg" alt="Nok Terracotta Sculpture - Head with Distinctive Features">
+                <img src="https://res.cloudinary.com/dc0pgvkii/image/upload/v1743689155/IMG-20241231-WA0042_b33qtd.jpg" alt="Nok Terracotta Figurine - Full Body">
+                <img src="https://res.cloudinary.com/dc0pgvkii/image/upload/v1743689149/IMG-20241231-WA0050_gtlckg.jpg" alt="Nok Terracotta Fragment - Facial Detail">
+            </div>
+            <button onclick="updateCarousel('nok', 'next')" aria-label="Next image">→</button>
+        </div>
+    </section>
+
+    <section id="bronzes-section" class="carousel-container">
+        <h2>African Bronzes</h2>
+        <div class="carousel">
+            <button onclick="updateCarousel('bronzes', 'prev')" aria-label="Previous image">←</button>
+            <div class="carousel-images" id="items-bronzes" data-index="0">
+                <img src="https://res.cloudinary.com/dc0pgvkii/image/upload/v1743689159/IMG-20241231-WA0117_tozsut.jpg" alt="Bronze Sculpture - Royal Figure">
+                <img src="https://res.cloudinary.com/dc0pgvkii/image/upload/v1743689155/IMG-20241231-WA0042_b33qtd.jpg" alt="Bronze Mask - Ceremonial Design">
+                <img src="https://res.cloudinary.com/dc0pgvkii/image/upload/v1743689149/IMG-20241231-WA0050_gtlckg.jpg" alt="Bronze Ornament - Decorative Pattern">
+            </div>
+            <button onclick="updateCarousel('bronzes', 'next')" aria-label="Next image">→</button>
+        </div>
+    </section>
+
+    <section id="fetishes-section" class="carousel-container">
+        <h2>Traditional Artifacts</h2>
+        <div class="carousel">
+            <button onclick="updateCarousel('fetishes', 'prev')" aria-label="Previous image">←</button>
+            <div class="carousel-images" id="items-fetishes" data-index="0">
+                <img src="https://res.cloudinary.com/dc0pgvkii/image/upload/v1743689159/IMG-20241231-WA0117_tozsut.jpg" alt="Traditional Artifact - Spiritual Object">
+                <img src="https://res.cloudinary.com/dc0pgvkii/image/upload/v1743689155/IMG-20241231-WA0042_b33qtd.jpg" alt="Traditional Artifact - Ceremonial Item">
+                <img src="https://res.cloudinary.com/dc0pgvkii/image/upload/v1743689149/IMG-20241231-WA0050_gtlckg.jpg" alt="Traditional Artifact - Ritual Object">
+            </div>
+            <button onclick="updateCarousel('fetishes', 'next')" aria-label="Next image">→</button>
+        </div>
+    </section>
+    
+    <section id="about" class="content-section">
+        <h2>About ARTEA</h2>
+        <p>ARTEA is dedicated to showcasing and preserving the rich artistic heritage of Africa. Our collection features authentic pieces that represent various cultural traditions across the continent.</p>
+    </section>
+</main>
+
+<footer id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: info@artea-gallery.com</p>
+    <p>Phone: +123 456 7890</p>
+    <p>Visit us: 123 Art Street, Gallery District</p>
+    <p>&copy; 2025 ARTEA Gallery. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
